@@ -1,0 +1,469 @@
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]Failed to detect a valid hadoop home directory
+java.io.IOException: HADOOP_HOME or hadoop.home.dir are not set.
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:329)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:354)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1507)
+	at org.apache.hadoop.hbase.HBaseConfiguration.checkDefaultsVersion(HBaseConfiguration.java:66)
+	at org.apache.hadoop.hbase.HBaseConfiguration.addHbaseResources(HBaseConfiguration.java:80)
+	at org.apache.hadoop.hbase.HBaseConfiguration.create(HBaseConfiguration.java:94)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:106)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]setsid is not available on this machine. So not using it.
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]setsid exited with exit code 0
+[DEBUG][22-05-08][org.apache.hadoop.security.Groups] Creating new Groups object
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Trying to load the custom-built native-hadoop library...
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path: /Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]java.library.path=/Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[WARN][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[DEBUG][22-05-08][org.apache.hadoop.util.PerformanceAdvisory]Falling back to shell based
+[DEBUG][22-05-08][org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback]Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+[DEBUG][22-05-08][org.apache.hadoop.security.Groups]Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about="", sampleName="Ops", type=DEFAULT, value={"Rate of successful kerberos logins and latency (milliseconds)"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about="", sampleName="Ops", type=DEFAULT, value={"Rate of failed kerberos logins and latency (milliseconds)"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, about="", sampleName="Ops", type=DEFAULT, value={"GetGroups"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.impl.MetricsSystemImpl]UgiMetrics, User and group related metrics
+[DEBUG][22-05-08][org.apache.hadoop.security.authentication.util.KerberosName]Kerberos krb5 configuration not found, setting default realm to empty
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]hadoop login
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]hadoop login commit
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]using local user:UnixPrincipal: zhushengping
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]Using user: "UnixPrincipal: zhushengping" with name zhushengping
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]User entry: "zhushengping"
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]Assuming keytab is managed externally since logged in from subject.
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]UGI loginUser:zhushengping (auth:SIMPLE)
+[WARN][22-05-08][org.apache.hadoop.hbase.util.UnsafeAvailChecker]java.nio.Bits#unaligned() check failed.Unsafe based read/write of primitive types won't be used
+java.lang.reflect.InaccessibleObjectException: Unable to make static boolean java.nio.Bits.unaligned() accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+	at org.apache.hadoop.hbase.util.UnsafeAvailChecker.<clinit>(UnsafeAvailChecker.java:63)
+	at org.apache.hadoop.hbase.util.Bytes.<clinit>(Bytes.java:134)
+	at org.apache.hadoop.hbase.client.ConnectionUtils.<clinit>(ConnectionUtils.java:266)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:246)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient]Connect 0x15ff3e9e to 120.48.251.58:2181 with session timeout=90000ms, retries 30, retry interval 1000ms, keepAlive=60000ms
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:host.name=localhost
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.version=18
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.vendor=Oracle Corporation
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.class.path=HbaseTest.jar
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.library.path=/Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.io.tmpdir=/var/folders/4p/_22c2p4s7y75h237gk9rd6n40000gp/T/
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.compiler=<NA>
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.name=Mac OS X
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.arch=x86_64
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.version=11.2
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.name=zhushengping
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.home=/Users/zhushengping
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.dir=/Users/zhushengping/IdeaProjects/HbaseTest/out/artifacts/HbaseTest_jar
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Initiating client connection, connectString=120.48.251.58:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$82/0x0000000800d06608@410e38a3
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]zookeeper.disableAutoWatchReset is false
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 120.48.251.58/120.48.251.58:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Socket connection established to 120.48.251.58/120.48.251.58:2181, initiating session
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Session establishment request sent on 120.48.251.58/120.48.251.58:2181
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Session establishment complete on server 120.48.251.58/120.48.251.58:2181, sessionid = 0x18096b66450005a, negotiated timeout = 90000
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005a, packet:: clientPath:/hbase/hbaseid serverPath:/hbase/hbaseid finished:false header:: 1,4  replyHeader:: 1,265,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030ffffffa3fffffff1ffffff83ffffff83ffffffc6ffffffdfffffffbfffffffe150425546a2439316536373434652d306235332d346135342d623736612d386464306263376362366434,s{13,13,1651795979621,1651795979621,0,0,0,0,67,0,13} 
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.logging.InternalLoggerFactory]Using SLF4J as the default logging framework
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector]-Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector]-Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]Platform: MacOS
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]-Dio.netty.noUnsafe: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]Java version: 18
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]sun.misc.Unsafe.theUnsafe: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]sun.misc.Unsafe.copyMemory: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.Buffer.address: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]direct buffer constructor: unavailable
+java.lang.reflect.InaccessibleObjectException: Unable to make private java.nio.DirectByteBuffer(long,int) accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:191)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:184)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:217)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:211)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.Bits.unaligned: unavailable true
+java.lang.reflect.InaccessibleObjectException: Unable to make static boolean java.nio.Bits.unaligned() accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:266)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:259)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4759139d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:308)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:299)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]sun.misc.Unsafe: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]maxDirectMemory: 2147483648 bytes (maybe)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.tmpdir: /var/folders/4p/_22c2p4s7y75h237gk9rd6n40000gp/T (java.io.tmpdir)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.noPreferDirect: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.CleanerJava9]java.nio.ByteBuffer.cleaner(): available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory]Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@5aa9e4eb
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG][22-05-08][org.apache.hadoop.hbase.util.ClassSize]Using Unsafe to estimate memory layout
+[DEBUG][22-05-08][org.apache.hadoop.hbase.ipc.AbstractRpcClient]Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@7c1e2a9e, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.MultithreadEventLoopGroup]-Dio.netty.eventLoopThreads: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.nio.NioEventLoop]-Dio.netty.noKeySetOptimization: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.nio.NioEventLoop]-Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005a, packet:: clientPath:/hbase/meta-region-server serverPath:/hbase/meta-region-server finished:false header:: 2,4  replyHeader:: 2,265,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff000146d61737465723a313630303062ffffffccffffffd1274affffffb2bffffffe150425546a18ac37373632373534316137663210ffffff947d18ffffffbbffffffd0ffffffd9ffffffb5ffffff8930100183,s{34,35,1651795984001,1651795984546,1,0,0,0,59,0,34} 
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.AbstractByteBuf]-Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory]Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@7749bf93
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelId]-Dio.netty.processId: 16576 (auto-detected)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]-Djava.net.preferIPv4Stack: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]-Djava.net.preferIPv6Addresses: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelId]-Dio.netty.machineId: a0:78:17:ff:fe:7a:29:38 (auto-detected)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.InternalThreadLocalMap]-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.InternalThreadLocalMap]-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.numHeapArenas: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.numDirectArenas: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.pageSize: 8192
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.maxOrder: 11
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.chunkSize: 16777216
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.smallCacheSize: 256
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.normalCacheSize: 64
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.allocator.type: pooled
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.maxCapacityPerThread: 32768
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.linkCapacity: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.ratio: 8
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005a, packet:: clientPath:/hbase/master serverPath:/hbase/master finished:false header:: 3,4  replyHeader:: 3,265,0  request:: '/hbase/master,F  response:: #ffffffff000146d61737465723a31363030305a62ffffffdc72ffffffd76c28ffffffc450425546a18ac37373632373534316137663210ffffff807d18fffffffeffffffc8ffffffd9ffffffb5ffffff893010018ffffff8a7d,s{11,11,1651795979355,1651795979355,0,0,0,108252101168070656,60,0,11} 
+[INFO][22-05-08][org.apache.hadoop.hbase.client.HBaseAdmin]Started disable of zhushengping:student
+[INFO][22-05-08][org.apache.hadoop.hbase.client.HBaseAdmin]Operation: DISABLE, Table Name: zhushengping:student, procId: 40 completed
+[INFO][22-05-08][org.apache.hadoop.hbase.client.HBaseAdmin]Operation: DELETE, Table Name: zhushengping:student, procId: 42 completed
+[INFO][22-05-08][org.example.HbaseMain]删除表 zhushengping:student
+[INFO][22-05-08][org.apache.hadoop.hbase.client.HBaseAdmin]Operation: CREATE, Table Name: zhushengping:student, procId: 43 completed
+[INFO][22-05-08][org.example.HbaseMain]create table:[122, 104, 117, 115, 104, 101, 110, 103, 112, 105, 110, 103, 58, 115, 116, 117, 100, 101, 110, 116] success!
+[INFO][22-05-08][org.example.HbaseMain]创建表 zhushengping:student
+[INFO][22-05-08][org.example.HbaseMain]写入数据.
+[INFO][22-05-08][org.example.HbaseMain]读取单元格-row1.state:G20220735030062
+[INFO][22-05-08][org.example.HbaseMain]读取单元格-row2
+[INFO][22-05-08][org.example.HbaseMain]扫描表结果-
+[INFO][22-05-08][org.example.HbaseMain]操作完成.
+[INFO][22-05-08][org.apache.hadoop.hbase.client.ConnectionImplementation]Closing master protocol: MasterService
+[DEBUG][22-05-08][org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient]Close zookeeper connection 0x15ff3e9e to 120.48.251.58:2181
+[DEBUG][22-05-08][org.apache.hadoop.hbase.ipc.AbstractRpcClient]Stopping rpc client
+[DEBUG][22-05-08][org.apache.zookeeper.ZooKeeper]Closing session: 0x18096b66450005a
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Closing client for session: 0x18096b66450005a
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]Failed to detect a valid hadoop home directory
+java.io.IOException: HADOOP_HOME or hadoop.home.dir are not set.
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:329)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:354)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1507)
+	at org.apache.hadoop.hbase.HBaseConfiguration.checkDefaultsVersion(HBaseConfiguration.java:66)
+	at org.apache.hadoop.hbase.HBaseConfiguration.addHbaseResources(HBaseConfiguration.java:80)
+	at org.apache.hadoop.hbase.HBaseConfiguration.create(HBaseConfiguration.java:94)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:106)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]setsid is not available on this machine. So not using it.
+[DEBUG][22-05-08][org.apache.hadoop.util.Shell]setsid exited with exit code 0
+[DEBUG][22-05-08][org.apache.hadoop.security.Groups] Creating new Groups object
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Trying to load the custom-built native-hadoop library...
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path: /Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[DEBUG][22-05-08][org.apache.hadoop.util.NativeCodeLoader]java.library.path=/Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[WARN][22-05-08][org.apache.hadoop.util.NativeCodeLoader]Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[DEBUG][22-05-08][org.apache.hadoop.util.PerformanceAdvisory]Falling back to shell based
+[DEBUG][22-05-08][org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback]Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+[DEBUG][22-05-08][org.apache.hadoop.security.Groups]Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName="Ops", about="", type=DEFAULT, value={"Rate of successful kerberos logins and latency (milliseconds)"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName="Ops", about="", type=DEFAULT, value={"Rate of failed kerberos logins and latency (milliseconds)"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.lib.MutableMetricsFactory]field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName="Ops", about="", type=DEFAULT, value={"GetGroups"}, valueName="Time")
+[DEBUG][22-05-08][org.apache.hadoop.metrics2.impl.MetricsSystemImpl]UgiMetrics, User and group related metrics
+[DEBUG][22-05-08][org.apache.hadoop.security.authentication.util.KerberosName]Kerberos krb5 configuration not found, setting default realm to empty
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]hadoop login
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]hadoop login commit
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]using local user:UnixPrincipal: zhushengping
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]Using user: "UnixPrincipal: zhushengping" with name zhushengping
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]User entry: "zhushengping"
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]Assuming keytab is managed externally since logged in from subject.
+[DEBUG][22-05-08][org.apache.hadoop.security.UserGroupInformation]UGI loginUser:zhushengping (auth:SIMPLE)
+[WARN][22-05-08][org.apache.hadoop.hbase.util.UnsafeAvailChecker]java.nio.Bits#unaligned() check failed.Unsafe based read/write of primitive types won't be used
+java.lang.reflect.InaccessibleObjectException: Unable to make static boolean java.nio.Bits.unaligned() accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+	at org.apache.hadoop.hbase.util.UnsafeAvailChecker.<clinit>(UnsafeAvailChecker.java:63)
+	at org.apache.hadoop.hbase.util.Bytes.<clinit>(Bytes.java:134)
+	at org.apache.hadoop.hbase.client.ConnectionUtils.<clinit>(ConnectionUtils.java:266)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:246)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient]Connect 0x15ff3e9e to 120.48.251.58:2181 with session timeout=90000ms, retries 30, retry interval 1000ms, keepAlive=60000ms
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:host.name=localhost
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.version=18
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.vendor=Oracle Corporation
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.class.path=HbaseTest.jar
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.library.path=/Users/zhushengping/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.io.tmpdir=/var/folders/4p/_22c2p4s7y75h237gk9rd6n40000gp/T/
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:java.compiler=<NA>
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.name=Mac OS X
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.arch=x86_64
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:os.version=11.2
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.name=zhushengping
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.home=/Users/zhushengping
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Client environment:user.dir=/Users/zhushengping/IdeaProjects/HbaseTest/out/artifacts/HbaseTest_jar
+[INFO][22-05-08][org.apache.zookeeper.ZooKeeper]Initiating client connection, connectString=120.48.251.58:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$82/0x0000000800d06608@410e38a3
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]zookeeper.disableAutoWatchReset is false
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 120.48.251.58/120.48.251.58:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Socket connection established to 120.48.251.58/120.48.251.58:2181, initiating session
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Session establishment request sent on 120.48.251.58/120.48.251.58:2181
+[INFO][22-05-08][org.apache.zookeeper.ClientCnxn]Session establishment complete on server 120.48.251.58/120.48.251.58:2181, sessionid = 0x18096b66450005c, negotiated timeout = 90000
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005c, packet:: clientPath:/hbase/hbaseid serverPath:/hbase/hbaseid finished:false header:: 1,4  replyHeader:: 1,277,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030ffffffa3fffffff1ffffff83ffffff83ffffffc6ffffffdfffffffbfffffffe150425546a2439316536373434652d306235332d346135342d623736612d386464306263376362366434,s{13,13,1651795979621,1651795979621,0,0,0,0,67,0,13} 
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.logging.InternalLoggerFactory]Using SLF4J as the default logging framework
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector]-Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector]-Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]Platform: MacOS
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]-Dio.netty.noUnsafe: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]Java version: 18
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]sun.misc.Unsafe.theUnsafe: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]sun.misc.Unsafe.copyMemory: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.Buffer.address: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]direct buffer constructor: unavailable
+java.lang.reflect.InaccessibleObjectException: Unable to make private java.nio.DirectByteBuffer(long,int) accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:191)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:184)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:217)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:211)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.Bits.unaligned: unavailable true
+java.lang.reflect.InaccessibleObjectException: Unable to make static boolean java.nio.Bits.unaligned() accessible: module java.base does not "opens java.nio" to unnamed module @4759139d
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:266)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:259)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4759139d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:308)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:299)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.apache.hadoop.hbase.ipc.AbstractRpcClient.<clinit>(AbstractRpcClient.java:99)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:383)
+	at java.base/java.lang.Class.forName(Class.java:376)
+	at org.apache.hadoop.hbase.util.ReflectionUtils.instantiateWithCustomCtor(ReflectionUtils.java:43)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:88)
+	at org.apache.hadoop.hbase.ipc.RpcClientFactory.createClient(RpcClientFactory.java:64)
+	at org.apache.hadoop.hbase.client.ConnectionImplementation.<init>(ConnectionImplementation.java:289)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:220)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:115)
+	at org.example.HbaseMain.getConnection(HbaseMain.java:110)
+	at org.example.HbaseMain.main(HbaseMain.java:34)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent0]java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]sun.misc.Unsafe: available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]maxDirectMemory: 2147483648 bytes (maybe)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.tmpdir: /var/folders/4p/_22c2p4s7y75h237gk9rd6n40000gp/T (java.io.tmpdir)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.noPreferDirect: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.CleanerJava9]java.nio.ByteBuffer.cleaner(): available
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory]Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@5aa9e4eb
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.PlatformDependent]org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG][22-05-08][org.apache.hadoop.hbase.util.ClassSize]Using Unsafe to estimate memory layout
+[DEBUG][22-05-08][org.apache.hadoop.hbase.ipc.AbstractRpcClient]Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@7c1e2a9e, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.MultithreadEventLoopGroup]-Dio.netty.eventLoopThreads: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.nio.NioEventLoop]-Dio.netty.noKeySetOptimization: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.nio.NioEventLoop]-Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005c, packet:: clientPath:/hbase/meta-region-server serverPath:/hbase/meta-region-server finished:false header:: 2,4  replyHeader:: 2,277,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff000146d61737465723a313630303062ffffffccffffffd1274affffffb2bffffffe150425546a18ac37373632373534316137663210ffffff947d18ffffffbbffffffd0ffffffd9ffffffb5ffffff8930100183,s{34,35,1651795984001,1651795984546,1,0,0,0,59,0,34} 
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.AbstractByteBuf]-Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetectorFactory]Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@7749bf93
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelId]-Dio.netty.processId: 16764 (auto-detected)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]-Djava.net.preferIPv4Stack: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]-Djava.net.preferIPv6Addresses: false
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.NetUtil]Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.channel.DefaultChannelId]-Dio.netty.machineId: a0:78:17:ff:fe:7a:29:38 (auto-detected)
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.InternalThreadLocalMap]-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.internal.InternalThreadLocalMap]-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.numHeapArenas: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.numDirectArenas: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.pageSize: 8192
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.maxOrder: 11
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.chunkSize: 16777216
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.smallCacheSize: 256
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.normalCacheSize: 64
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.PooledByteBufAllocator]-Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.allocator.type: pooled
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.buffer.ByteBufUtil]-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.maxCapacityPerThread: 32768
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.linkCapacity: 16
+[DEBUG][22-05-08][org.apache.hbase.thirdparty.io.netty.util.Recycler]-Dio.netty.recycler.ratio: 8
+[INFO][22-05-08][org.example.HbaseMain]删除表 zhushengping:student
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Reading reply sessionid:0x18096b66450005c, packet:: clientPath:/hbase/master serverPath:/hbase/master finished:false header:: 3,4  replyHeader:: 3,277,0  request:: '/hbase/master,F  response:: #ffffffff000146d61737465723a31363030305a62ffffffdc72ffffffd76c28ffffffc450425546a18ac37373632373534316137663210ffffff807d18fffffffeffffffc8ffffffd9ffffffb5ffffff893010018ffffff8a7d,s{11,11,1651795979355,1651795979355,0,0,0,108252101168070656,60,0,11} 
+[INFO][22-05-08][org.apache.hadoop.hbase.client.HBaseAdmin]Operation: CREATE, Table Name: zhushengping:student, procId: 48 completed
+[INFO][22-05-08][org.example.HbaseMain]create table:[122, 104, 117, 115, 104, 101, 110, 103, 112, 105, 110, 103, 58, 115, 116, 117, 100, 101, 110, 116] success!
+[INFO][22-05-08][org.example.HbaseMain]创建表 zhushengping:student
+[INFO][22-05-08][org.example.HbaseMain]写入数据.
+[INFO][22-05-08][org.example.HbaseMain]读取单元格-row1.state:G20220735030062
+[INFO][22-05-08][org.example.HbaseMain]读取单元格-row2
+[INFO][22-05-08][org.example.HbaseMain]扫描表结果-
+[INFO][22-05-08][org.example.HbaseMain]操作完成.
+[INFO][22-05-08][org.apache.hadoop.hbase.client.ConnectionImplementation]Closing master protocol: MasterService
+[DEBUG][22-05-08][org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient]Close zookeeper connection 0x15ff3e9e to 120.48.251.58:2181
+[DEBUG][22-05-08][org.apache.hadoop.hbase.ipc.AbstractRpcClient]Stopping rpc client
+[DEBUG][22-05-08][org.apache.zookeeper.ZooKeeper]Closing session: 0x18096b66450005c
+[DEBUG][22-05-08][org.apache.zookeeper.ClientCnxn]Closing client for session: 0x18096b66450005c

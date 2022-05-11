@@ -1,0 +1,89 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HbaseTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HbaseTest_jar</output-path>
+    <root id="archive" name="HbaseTest.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="HbaseTest" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-expression/3.0.5.RELEASE/spring-expression-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-cli/commons-cli/1.2/commons-cli-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/github/stephenc/findbugs/findbugs-annotations/1.3.9-1/findbugs-annotations-1.3.9-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/zookeeper/zookeeper/3.4.10/zookeeper-3.4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-hadoop2-compat/2.1.3/hbase-hadoop2-compat-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-net/commons-net/3.1/commons-net-3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/avro/avro/1.7.4/avro-1.7.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/mortbay/jetty/jetty-sslengine/6.1.26/jetty-sslengine-6.1.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-hadoop-compat/2.1.3/hbase-hadoop-compat-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-io/commons-io/2.5/commons-io-2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/thirdparty/hbase-shaded-protobuf/2.1.0/hbase-shaded-protobuf-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/junit/junit/4.12/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/jruby/jcodings/jcodings/1.0.18/jcodings-1.0.18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-metrics-api/2.1.3/hbase-metrics-api-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hadoop/hadoop-annotations/2.7.7/hadoop-annotations-2.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/alibaba/fastjson/1.2.57/fastjson-1.2.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/thirdparty/hbase-shaded-miscellaneous/2.1.0/hbase-shaded-miscellaneous-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/io/dropwizard/metrics/metrics-core/3.2.1/metrics-core-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/tukaani/xz/1.0/xz-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-context/3.0.5.RELEASE/spring-context-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/jruby/joni/joni/2.1.11/joni-2.1.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/xmlenc/xmlenc/0.52/xmlenc-0.52.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-protocol-shaded/2.1.3/hbase-protocol-shaded-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/net/sf/trove4j/core/3.1.0/core-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/google/guava/guava/11.0.2/guava-11.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-common/2.1.3/hbase-common-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hadoop/hadoop-common/2.7.7/hadoop-common-2.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-metrics/2.1.3/hbase-metrics-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/springframework/spring-aop/3.0.5.RELEASE/spring-aop-3.0.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-client/2.1.3/hbase-client-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hadoop/hadoop-auth/2.7.7/hadoop-auth-2.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/tools.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/commons-digester/commons-digester/1.8/commons-digester-1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/hbase-protocol/2.1.3/hbase-protocol-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/hbase/thirdparty/hbase-shaded-netty/2.1.0/hbase-shaded-netty-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/mvn/local-repo/org/apache/htrace/htrace-core4/4.2.0-incubating/htrace-core4-4.2.0-incubating.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
